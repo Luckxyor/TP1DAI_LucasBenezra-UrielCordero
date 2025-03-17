@@ -9,16 +9,19 @@
 <body>
     <form>
         <label>Nombre y apellido:
-            <input type="text" placeholder="Ex: Valentino Ekes" minlength="3">
+            <input type="text" placeholder="Ex: Valentino Ekes" minlength="3" id="nombreApellido" oninput="NombreBien()">
+            <p id="NombreMal">El nombre completo debe tener al menos 3 caracteres.</p>
         </label>
         <label>Email:
-            <input type="email" placeholder="Ex: valentinoEkes@gmail.com">
+            <input type="email" placeholder="Ex: valentinoEkes@gmail.com" id="email">
         </label>
         <label>Contraseña:
-            <input type="password" placeholder="Ex: Ekes123">
+            <input type="password" placeholder="Ex: Ekes123" id="Password" oninput="ConstraseñaBien()">
+            <p id="contraseñaMal">La contraseña no cumple con los requisitos</p>
         </label>
         <label>Confirmar contraseña:
-            <input type="password" placeholder="Ex: Ekes123">
+            <input type="password" placeholder="Ex: Ekes123" id="ConfirmPassword" oninput="CoincidenContraseñas()">
+            <p id="noCoinciden">Las contraseñas no coinciden</p>
         </label>
         <button>Enviar</button>
     </form>
