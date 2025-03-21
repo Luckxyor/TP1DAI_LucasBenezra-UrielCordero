@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <h1>Formulario de Registro:</h1>
         <label>Nombre y apellido:
-            <input type="text" placeholder="Ex: Valentino Ekes" minlength="3" id="nombreApellido" oninput="NombreBien()">
-            <p id="NombreMal">El nombre completo debe tener al menos 3 caracteres.</p>
+            <input type="text" placeholder="Ej: Marcelino Moreno" minlength="3" id="nombreApellido" oninput="NombreBien()">
+            <p id="nombreMal"></p>
         </label>
+        
         <label>Email:
-            <input type="email" placeholder="Ex: valentinoEkes@gmail.com" id="email">
+            <input type="email" placeholder="Ej: MarceMore@gmail.com" id="email" oninput="emailBien()">
+            <p id="emailMal"></p>
         </label>
+        
         <label>Contraseña:
-            <input type="password" placeholder="Ex: Ekes123" id="Password" oninput="ConstraseñaBien()">
-            <p id="contraseñaMal">La contraseña no cumple con los requisitos</p>
+            <input type="text" placeholder="Ej: Lanus123" id="contraseña" oninput="ConstraseñaBien()">
+            <p id="contraseñaMal"></p>
         </label>
+        
         <label>Confirmar contraseña:
-            <input type="password" placeholder="Ex: Ekes123" id="ConfirmPassword" oninput="CoincidenContraseñas()">
-            <p id="noCoinciden">Las contraseñas no coinciden</p>
+            <input type="text" placeholder="Ej: Lanus123" id="confirmarContraseña" oninput="CoincidenContraseñas()">
+            <p id="noCoinciden"></p>
         </label>
-        <button>Enviar</button>
+        <p id="noCoinciden"></p>
+        <button type="submit">Enviar</button>
     </form>
     <script src="script.js"></script>
 </body>
