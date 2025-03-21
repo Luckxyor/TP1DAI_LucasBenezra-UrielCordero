@@ -11,24 +11,23 @@
         <h1>Formulario de Registro:</h1>
         <label>Nombre y apellido:
             <input type="text" placeholder="Ej: Marcelino Moreno" minlength="3" id="nombreApellido" oninput="NombreBien()">
-            <p id="nombreMal"></p>
+            <p id="nombreMal" class="mensajeError"></p>
         </label>
         
         <label>Email:
             <input type="email" placeholder="Ej: MarceMore@gmail.com" id="email" oninput="emailBien()">
-            <p id="emailMal"></p>
+            <p id="emailMal" class="mensajeError"></p>
         </label>
         
         <label>Contraseña:
             <input type="text" placeholder="Ej: Lanus123" id="contraseña" oninput="ConstraseñaBien()">
-            <p id="contraseñaMal"></p>
+            <p id="contraseñaMal" class="mensajeError"></p>
         </label>
         
         <label>Confirmar contraseña:
             <input type="text" placeholder="Ej: Lanus123" id="confirmarContraseña" oninput="CoincidenContraseñas()">
-            <p id="noCoinciden"></p>
+            <p id="noCoinciden" class="mensajeError"></p>
         </label>
-        <p id="noCoinciden"></p>
         <button type="submit">Enviar</button>
     </form>
     <script src="script.js"></script>

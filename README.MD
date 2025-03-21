@@ -1,0 +1,4 @@
+1) La interfaz la diseñamos pensando en un diseño mas moderno con tonos oscuros, ya que creemos que es un lindo diseño y agradable a la vista, en vez de uno muy colorido y/o con colores muy claros.
+2) Lo pensamos donde cada imput al ingresarse un texto, gracias al oninput, podemos verificar lo que se ingresa a tiempo real con javascript. Donde cada funcion cumple con su objetivo de la consigna.
+3) Tuvimos inconvenientes con el diseño con respecto a las proporciones pero pudimos resolverlo gracias a la prueba y error.
+4) Agregariamos mejoras de diseño y tambien implementar de mejor manera las validaciones en el script, ya que no estamos tan convencidos con la manera en la cual lo resolvimos.

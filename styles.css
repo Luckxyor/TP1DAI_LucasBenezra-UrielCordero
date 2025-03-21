@@ -33,7 +33,7 @@ input{
     border-bottom: 2px solid #ddd;
     color: #ddd;
     padding: 5px 10px;
-    width: 80%;
+    width: 93%;
     border-style: outset;
 }
 input:focus{
@@ -47,7 +47,12 @@ label p{
     margin: 0;
 }
 
-#noCoinciden, #contraseñaMal, #nombreMal, #emailMal{
+.mensajeError{
     color: red;
     font-size: 0.8em;
+}
+
+button{
+    padding: 5px 10px;
+    margin: 10px;
 }
